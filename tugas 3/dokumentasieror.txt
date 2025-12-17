@@ -1,0 +1,16 @@
+DOKUMENTASI DETEKSI ERROR
+
+1. Error: Query SQL rentan SQL Injection
+   Jenis: Security Error
+   Penyebab: Menggunakan query langsung dengan variabel POST
+   Perbaikan: Menggunakan prepared statements (mysqli_prepare)
+
+2. Error: Undefined index
+   Jenis: Runtime Error
+   Penyebab: Tidak mengecek tombol submit
+   Perbaikan: Menggunakan isset($_POST['daftar'])
+
+3. Error: Tidak ada validasi koneksi
+   Jenis: Runtime Error
+   Penyebab: Koneksi database gagal
+   Perbaikan: Menambahkan pengecekan mysqli_connect_error()
