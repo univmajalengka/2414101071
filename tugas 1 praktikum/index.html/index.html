@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wisata Alam Dieng Wonosobo</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f6f6f6;
+      }
+
+      header {
+        background: linear-gradient(90deg, #1565c0, #1e88e5);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      /* KARTU DESTINASI */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 14px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 16px;
+        text-align: center;
+      }
+
+      .card-body h3 {
+        margin-top: 10px;
+      }
+
+      /* PETA */
+      .map {
+        margin-top: 40px;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* FORM PENDAFTARAN */
+      .form-box {
+        margin-top: 40px;
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-box h2 {
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        background: #1e88e5;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0d47a1;
+      }
+
+      footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Wisata Alam Dieng Wonosobo</h1>
+      <p>Jelajahi keindahan alam Dieng yang menakjubkan</p>
+    </header>
+
+    <div class="container">
+      <h2>Destinasi Populer</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="telagawarna.jpg.jpeg" />
+          <div class="card-body">
+            <h3>Telaga Warna</h3>
+            <p>Danau unik yang dapat berubah warna.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="bukitsikunir.jpg.jpeg" />
+          <div class="card-body">
+            <h3>Bukit Sikunir</h3>
+            <p>Spot sunrise terbaik di Indonesia.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="kawahsikidang.jpg.jpeg" />
+          <div class="card-body">
+            <h3>Kawah Sikidang</h3>
+            <p>Kawah aktif dengan asap sulfur.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="candiarjuna.jpg.jpeg" />
+          <div class="card-body">
+            <h3>Candi Arjuna</h3>
+            <p>Candi Hindu bersejarah peninggalan Mataram Kuno.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PETA GOOGLE MAPS -->
+      <h2 style="margin-top: 40px">Peta Lokasi Dieng</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31638.731536000683!2d109.895!3d-7.205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa9c8ddbfe511%3A0x3027a76e352bc70!2sDieng%20Plateau!5e0!3m2!1sid!2sid!4v1701184700000"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- FORM PENDAFTARAN -->
+      <div class="form-box">
+        <h2>Pendaftaran Kunjungan Wisata</h2>
+
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" placeholder="Masukkan nama lengkap" />
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Masukkan email aktif" />
+        </div>
+
+        <div class="form-group">
+          <label>Pilih Destinasi</label>
+          <select>
+            <option>Telaga Warna</option>
+            <option>Bukit Sikunir</option>
+            <option>Kawah Sikidang</option>
+            <option>Candi Arjuna</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Catatan Tambahan</label>
+          <textarea rows="4" placeholder="Tulis catatan jika ada..."></textarea>
+        </div>
+
+        <button>Daftar Sekarang</button>
+      </div>
+    </div>
+
+    <footer>© 2025 Wisata Dieng — Dikembangkan oleh Kamu</footer>
+  </body>
+</html>
